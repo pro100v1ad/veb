@@ -1,0 +1,27 @@
+h1 {
+    text-align: center;
+    padding: 10px;
+}
+
+.photo-container {
+    margin: 0 auto;
+    display: grid;
+    justify-content: center;
+    gap: 20px;    
+    grid-template-columns: repeat(3, 1fr);
+    
+}
+
+.photo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.photo img{
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+}
+

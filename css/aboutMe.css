@@ -1,0 +1,80 @@
+/* Общие стили */
+.resume {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.resume-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #34495e;
+    padding-bottom: 1rem;
+}
+
+.resume-header h1 {
+    margin: 0;
+    color: #2c3e50;
+}
+
+.subtitle {
+    color: #7f8c8d;
+    margin: 0.5rem 0;
+}
+
+
+/* Секции резюме */
+.resume-section {
+    margin-bottom: 2rem;
+}
+
+.resume-section h2 {
+    color: #2c3e50;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.5rem;
+}
+
+/* Опыт и проекты */
+.experience-item {
+    margin-bottom: 1.5rem;
+}
+
+
+
+/* Навыки */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.skill-category {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.skill-category h3 {
+    color: #3498db;
+    margin-top: 0;
+}
+
+.skill-category ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skill-category li {
+    padding: 0.3rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+/* Образование и достижения */
+.education-item h3,
+.experience-item h3 {
+    margin-top: 0;
+}
