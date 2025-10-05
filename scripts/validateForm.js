@@ -35,7 +35,7 @@ function validateContactForm() {
             document.getElementById('fullname').focus();
             return;
         }
-    }
+    } 
 
     // Номер телефона
     const phone = document.getElementById('phone').value;

@@ -14,4 +14,4 @@ for(let i = 0; i < photoCounts; i++) {
                     <img src="${fotos[i]}" alt="${titles[i]}" title="${titles[i]}">
                     <figcaption>${titles[i]}</figcaption>
                     </figure>`);
-}
+} 
