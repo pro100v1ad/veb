@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Мои интересы</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/inerests.css"> 
+        <script src="../scripts/index.js"></script>
+    </head>
+    <body>
+    <div class="container">
+    <header>
+        <nav class="navigation">
+            <ul>
+                <li><a href="mainPage.html">Главная</a></li>
+                <li><a href="aboutMe.html">Обо мне</a></li>
+                <li><p class="active">Мои интересы</p></li>
+                <li><a href="study.html">Учеба</a></li>
+                <li><a href="photoAlbum.html">Фотоальбом</a></li>
+                <li><a href="contact.html">Контакт</a></li>
+                <li><a href="test.html">Тест</a></li>
+            </ul>
+        </nav>
+    </header> 
+    <main class="main-content">
+
+        <h1>Мои интересы</h1>
+
+        <div class="content-navigation">
+            <ul>
+                <li><a href="#hobby">Хобби</a></li>
+                <li><a href="#book">Книги</a></li>
+                <li><a href="#music">Музыка</a></li>
+                <li><a href="#game">Игры</a></li>
+                <li><a href="#sport">Спорт</a></li>
+            </ul>
+        </div>
+
+        <section id="hobby">
+            <h2>Мое Хобби</h2>
+            <hr>
+            <p>Программирование — это моё страстное хобби и будущая специальность. Я с удовольствием трачу свободное время на:</p>
+            <script>
+                list("u", "Создание pet-проектов на Java и JavaScript", 
+                "Освоение современных инструментов и технологий (React, Spring Boot, Node.js)", 
+                "Решение алгоритмических задач и участие в хакатонах");
+            </script>
+        </section>
+
+        <section id="book">
+            <h2>Любимые книги</h2>
+            <hr>
+            <p>В литературе предпочитаю фэнтези и приключенческие саги:</p>
+            <script>
+                list("u", '<strong>"Гарри Поттер"</strong> — Дж. К. Роулинг', 
+                '<strong>"Хроники Нарнии"</strong> — Клайв Стейплз Льюис', 
+                '<strong>"Властелин колец"</strong> — Дж. Р. Р. Толкин',
+                '<strong>"Перси Джексон"</strong> — Рик Риордан');
+            </script>
+        </section>
+
+        <section id="music">
+            <h2>Музыка которую я слушаю</h2>
+            <hr>
+            <p>Музыкальные предпочтения разнообразны, но особенно близки мне следующие жанры и исполнители:</p>
+            <script>
+                list("u", `Альтернативный рок / Поп-панк: 
+                    <p><strong>Enemy</strong> — Imagine Dragons</p>
+                    <p><strong>Teeth</strong> — 5 Seconds of Summer</p>    
+                    <p><strong>Sorry I’m Here for Someone Else</strong> — The Neighbourhood</p>`, 
+                `Рэп / Хип-хоп:
+                    <p><strong>Запомни, есть два типа людей</strong> — ЛСП</p>
+                    <p><strong>Гори, гори, гори</strong> - Монеточка</p>`, 
+                `Современный поп / R&B:
+                    <p><strong>The Weeknd</strong> — Blinding Lights, Save Your Tears</p>
+                    <p><strong>Dua Lipa</strong> — Levitating</p>`,
+                `Эпическая оркестровая / Киномузыка:
+                    <p><strong>Two Steps From Hell</strong> — Heart of Courage, Victory</p>
+                    <p><strong>Audiomachine</strong> — Tree of Life, Blood and Stone</p>
+                    <p><strong>Really Slow Motion</strong> — Epic Heart, The Last of Us</p>`);
+            </script>
+        
+        </section>
+
+        <section id="game">
+            <h2>Игры в которые я играю</h2>
+            <hr>
+            <p>Из игровых вселенных особенно выделяю проекты с открытым миром, стратегией и креативностью:</p>
+            <script>
+                list("u", `Песочницы и выживание: 
+                    <p><strong>Terraria</strong> — за бесконечные возможности для творчества и исследования</p>
+                    <p><strong>Minecraft</strong> — за свободу действий и модульность</p>`, 
+                `Стратегии и логистика:
+                    <p><strong>Factorio</strong> — за сложную систему автоматизации и оптимизации</p>
+                    <p><strong>Mindustry</strong> — за сочетание стратегии и башенной обороны</p>`, 
+                `Tower Defense и тактические игры:
+                    <p><strong>Tower Defense X</strong> — за динамичный геймплей и разнообразие стратегий</p>
+                    <p><strong>Limbus Company</strong> — за уникальный визуальный стиль и атмосферу</p>`);
+            </script>
+        </section>
+
+        <section id="sport">
+            <h2>Спорт и активности</h2>
+            <hr>
+            <p>Поддерживую физическую форму через:</p>
+            <script>
+                list("u", "Занятие в зале", 
+                "Пешие прогулки", 
+                "Плавание в море");
+            </script>
+        </section>
+
+    </main>
+    <footer>
+
+    </footer>
+    </div>   
+    </body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Контакт</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/contact.css">
+        <script src="../scripts/validateForm.js"></script>
+    </head>
+    <body>
+    <div class="container">
+    <header>
+        <nav class="navigation">
+            <ul>
+                <li><a href="mainPage.html">Главная</a></li>
+                <li><a href="aboutMe.html">Обо мне</a></li>
+                <li><a href="interests.html">Мои интересы</a></li>
+                <li><a href="study.html">Учеба</a></li>
+                <li><a href="photoAlbum.html">Фотоальбом</a></li>
+                <li><p class="active">Контакт</p></li>
+                <li><a href="test.html">Тест</a></li>
+            </ul>
+        </nav>
+    </header> 
+    <main class="main-content">
+        
+        <form id="contactForm">
+            <h1>Контактная форма</h1>
+            <div class="contact">
+                <label for="fullname">Введите ФИО: </label>
+                <input type="text" id="fullname" name="fullname">
+                <span class="error-message" id="fullnameError"></span>
+                
+                <label for="phone">Введите номер телефона: </label>
+                <input type="text" id="phone" name="phone">
+                <span class="error-message" id="phoneError"></span>
+            </div>
+
+            <div class="contact">
+                <p>Пол: </p>
+                <div class="radio">
+                    <label><input type="radio" name="gender" value="male" >Мужской</label>
+                    <label><input type="radio" name="gender" value="female">Женский</label>
+                </div>
+                <span class="error-message" id="genderError"></span>
+            </div>
+            
+            <div class="contact">
+                <label for="age">Возраст: </label>
+                <select name="age" id="age" >
+                    <option value="">Выберите возраст</option>
+                    <option value="3-17">от 3 до 17 лет</option>
+                    <option value="18-21">от 18 до 21 лет</option>
+                    <option value="22-45">от 22 до 45 лет</option>
+                    <option value="46+">46+ лет</option>
+                </select>
+                <span class="error-message" id="ageError"></span>
+            </div>
+
+            <div class="contact">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" >
+                <span class="error-message" id="emailError"></span>
+            </div>
+
+            <div class="contact">
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message" rows="4" ></textarea>
+                <span class="error-message" id="messageError"></span>
+            </div>
+
+            <div class="buttons">
+                <button type="button" onclick="validateContactForm()">Отправить</button>
+                <button type="reset" onclick="clearContactErrors()">Очистить форму</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+    </div>   
+    </body>
+</html>
