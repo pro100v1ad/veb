@@ -1,0 +1,43 @@
+.calendar {
+    display: none;
+    margin-top: 10px;
+    border: 1px solid #8f8f8f;
+    width: 320px;
+    height: 300px;
+    background-color: #8f8f8f;
+}
+.calendar form {
+    background-color: orange;
+    border: 1px solid #8f8f8f;
+    display: flex;
+    width: 100%;
+    left: 0px;
+    margin: 0px;
+}
+.calendar form select {
+    display: block;
+    margin: 0 auto;
+    width: 45%;
+}
+.calendar .nameOfdays {
+    border: 2px solid black;
+    display: flex;
+}
+.calendar .nameOfdays div {
+    margin: 0 auto;
+}
+.calendar .days {
+    border: 2px solid wheat;
+    display: flex;
+    flex-wrap: wrap;
+}
+.calendar .days div {
+    display: block;
+    width: 13%;
+    height: 14%;
+    border: 1px solid white;
+    margin: 2px;
+}
+.calendar.show{
+    display: block;
+}

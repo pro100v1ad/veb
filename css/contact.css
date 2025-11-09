@@ -170,3 +170,35 @@ form {
     gap: 5px;
     margin-top: 10px;
 }
+
+.valid {
+    border: 2px solid green !important;
+}
+
+.invalid {
+    border: 2px solid red !important;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    display: none;
+}
+
+.buttons button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.buttons button:enabled {
+    color: white;
+    cursor: pointer;
+}
+
+input[type="radio"].valid {
+    outline: 2px solid green;
+}
+
+input[type="radio"].invalid {
+    outline: 2px solid red;
+}

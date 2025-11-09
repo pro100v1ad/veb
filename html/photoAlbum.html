@@ -1,36 +1,54 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Фотоальбом</title>
-        <link rel="stylesheet" href="../css/style.css">
-        <link rel="stylesheet" href="../css/photoAlbum.css">
 
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <title>Фотоальбом</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/photoAlbum.css">
+    <script src="../scripts/all.js"></script>
+
+</head>
+
+<body>
     <div class="container">
-    <header>
-        <nav class="navigation">
-            <ul>
-                <li><a href="mainPage.html">Главная</a></li>
-                <li><a href="aboutMe.html">Обо мне</a></li>
-                <li><a href="interests.html">Мои интересы</a></li>
-                <li><a href="study.html">Учеба</a></li>
-                <li><p class="active">Фотоальбом</p></li>
-                <li><a href="contact.html">Контакт</a></li>
-                <li><a href="test.html">Тест</a></li>
-            </ul>
-        </nav>
-    </header> 
-    <main class="main-content">
-        <h1>Фотоальбом</h1>
-        <div class="photo-container">
-            <script src="../scripts/photoAlbum.js"></script>
-        </div>
-    </main>
-    <footer>
- 
-    </footer>
-    </div>   
-    </body>
+        <header>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="mainPage.html">Главная</a></li>
+                    <li><a href="aboutMe.html">Обо мне</a></li>
+                    <li><a href="interests.html">Мои интересы</a>
+                        <div class="content-navigation">
+                            <ul>
+                                <li><a href="interests.html#hobby">Хобби</a></li>
+                                <li><a href="interests.html#book">Книги</a></li>
+                                <li><a href="interests.html#music">Музыка</a></li>
+                                <li><a href="interests.html#game">Игры</a></li>
+                                <li><a href="interests.html#sport">Спорт</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="study.html">Учеба</a></li>
+                    <li>
+                        <p class="active">Фотоальбом</p>
+                    </li>
+                    <li><a href="contact.html">Контакт</a></li>
+                    <li><a href="test.html">Тест</a></li>
+                    <li><a href="cookie.html">История просмотра</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main-content">
+            <div id="big-photo"></div>
+            <h1>Фотоальбом</h1>
+            <div class="photo-container">
+                <script src="../scripts/photoAlbum.js"></script>
+            </div>
+        </main>
+        <footer>
+
+        </footer>
+    </div>
+</body>
+
 </html>
